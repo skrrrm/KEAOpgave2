@@ -19,8 +19,8 @@ namespace KEAOpgave2
 
         private void buttonSum_Click(object sender, EventArgs e) // Crasher hvis der ikke indskrives tal
         {
-            double a = Convert.ToDouble(textBox1.Text); // Konvertere textbox1 til en double, så der kan regnes på det
-            double b = Convert.ToDouble(textBox2.Text); // Konvertere textbox2 til en double, så der kan regnes på det
+            double a = Convert.ToDouble(textBox1.Text); // Konvertere textbox1 til en double, så der kan regnes på det, da det jo er en string
+            double b = Convert.ToDouble(textBox2.Text); // --------- || ---------
             labelResult.Text = Convert.ToString(a+b); // Lægger a og b sammen og konvertere til tekst
         }
     }
