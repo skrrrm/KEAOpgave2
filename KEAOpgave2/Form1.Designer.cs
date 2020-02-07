@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelVejledning = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSum = new System.Windows.Forms.Button();
+            this.labelResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelVejledning
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(193, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.labelVejledning.AutoSize = true;
+            this.labelVejledning.Location = new System.Drawing.Point(193, 87);
+            this.labelVejledning.Name = "labelVejledning";
+            this.labelVejledning.Size = new System.Drawing.Size(314, 25);
+            this.labelVejledning.TabIndex = 0;
+            this.labelVejledning.Text = "Skriv et tal i hver af de to bokse";
             // 
             // textBox1
             // 
@@ -57,24 +58,34 @@
             this.textBox2.Size = new System.Drawing.Size(100, 31);
             this.textBox2.TabIndex = 2;
             // 
-            // button1
+            // buttonSum
             // 
-            this.button1.Location = new System.Drawing.Point(306, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSum.Location = new System.Drawing.Point(284, 285);
+            this.buttonSum.Name = "buttonSum";
+            this.buttonSum.Size = new System.Drawing.Size(223, 42);
+            this.buttonSum.TabIndex = 3;
+            this.buttonSum.Text = "Klik for summen";
+            this.buttonSum.UseVisualStyleBackColor = true;
+            this.buttonSum.Click += new System.EventHandler(this.buttonSum_Click);
+            // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Location = new System.Drawing.Point(198, 366);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(0, 25);
+            this.labelResult.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelResult);
+            this.Controls.Add(this.buttonSum);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelVejledning);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -84,10 +95,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelVejledning;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSum;
+        private System.Windows.Forms.Label labelResult;
     }
 }
 
